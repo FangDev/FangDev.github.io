@@ -12,7 +12,7 @@
 		transform: translate(-50%, 0);
 		
 		opacity: 0;
-		visibility: hidden;
+		visibility: none;
 	}
 
 	#coming-soon-container:hover > #coming-soon {
@@ -20,16 +20,14 @@
 		visibility: visible;
 	}
 	
-	#coming-soon-container-mobile{
-		opacity: 0;
-		visibility: hidden;
+	#coming-soon-container-mobile {
+		display: none;
 	}
 }
 
-@media only screen and (max-width : 1327px) {
+@media all and (max-width : 1327px) {
 	#coming-soon-container {
-		opacity: 0;
-		visibility: hidden;
+		display: none;
 	}
 	
 	#coming-soon-container-mobile {
@@ -46,7 +44,7 @@
 		transform: translate(-50%, 0);
 		
 		opacity: 0;
-		visibility: hidden;
+		visibility: none;
 	}
 	
 	#coming-soon-container-mobile:hover > #coming-soon-mobile {
