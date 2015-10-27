@@ -1,52 +1,76 @@
-@media only screen and (min-width : 1328px) {
-	#coming-soon-container {
-		margin: auto;
-		margin-top: 100px;
-		width: 1328px;
+@media screen and (min-width : 1024px) {
+	#logo {
+		background: url(../data/FangDev-Logo.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		
+		height: 243px;
+		width: 664px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-
+	
 	#coming-soon {
+		transition-duration: 0.4s;
+		
 		position: absolute;
-		top: 100px;
 		left: 50%;
 		transform: translate(-50%, 0);
+		
+		top: 0px;
+		background: url(../data/Coming-Soon.png);
+		background-size: 256px 256px;
+		background-repeat: no-repeat;
+		background-position: center top;
+	
+		height: 256px;
+		width: 664px;
 		
 		opacity: 0;
 		visibility: none;
 	}
-
-	#coming-soon-container:hover > #coming-soon {
+	
+	#logo:hover + #coming-soon, #coming-soon:hover {
 		opacity: 1;
 		visibility: visible;
 	}
-	
-	#coming-soon-container-mobile {
-		display: none;
-	}
 }
 
-@media all and (max-width : 1327px) {
-	#coming-soon-container {
-		display: none;
+@media screen and (max-width : 1023px) {
+	#logo {
+		background: url(../data/FangDev-Logo-Small.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		
+		height: 512px;
+		width: 512px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
-	#coming-soon-container-mobile {
+	#coming-soon {
+		transition-duration: 0.4s;
+		
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, 0);
-	}
+		
+		top: 10px;
+		background: url(../data/Coming-Soon.png);
+		background-size: 512px 512px;
+		background-repeat: no-repeat;
+		background-position: center top;
 	
-	#coming-soon-mobile {
-		position: absolute;
-		top: 0px;
-		left: 50%;
-		transform: translate(-50%, 0);
+		height: 512px;
+		width: 512px;
 		
 		opacity: 0;
 		visibility: none;
 	}
 	
-	#coming-soon-container-mobile:hover > #coming-soon-mobile {
+	#logo:hover + #coming-soon, #coming-soon:hover {
 		opacity: 1;
 		visibility: visible;
 	}
