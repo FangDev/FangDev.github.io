@@ -28,7 +28,7 @@
 		width: 664px;
 		
 		opacity: 0;
-		visibility: none;
+		visibility: hidden;
 	}
 	
 	#logo:hover + #coming-soon, #coming-soon:hover {
@@ -67,7 +67,7 @@
 		width: 512px;
 		
 		opacity: 0;
-		visibility: none;
+		visibility: hidden;
 	}
 	
 	#logo:hover + #coming-soon, #coming-soon:hover {
