@@ -1,0 +1,234 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "https://fonts.googleapis.com/css?family=Pacifico";
+@import "https://fonts.googleapis.com/css?family=Lato";
+@import "https://fonts.googleapis.com/css?family=Oswald";
+@import "https://fonts.googleapis.com/css?family=Merriweather";
+/* line 5, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 29, ../sass/screen.sass */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 33, ../sass/screen.sass */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/* line 36, ../sass/screen.sass */
+.navbar-brand-logo {
+  height: 50px;
+  padding-top: 5px;
+}
+
+/* line 40, ../sass/screen.sass */
+.navbar {
+  font-family: Pacifico, cursive !important;
+  background-color: #F6F8EE;
+}
+
+/* line 44, ../sass/screen.sass */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: -5px;
+  padding: 0;
+}
+
+/* line 50, ../sass/screen.sass */
+.navbar-brand-text {
+  margin-top: -30px;
+  margin-left: 50px;
+}
+
+/* line 54, ../sass/screen.sass */
+.container > .navbar-header {
+  margin-left: 30px;
+}
+
+/* line 57, ../sass/screen.sass */
+.navbar-nav a {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* line 62, ../sass/screen.sass */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: #D6E68A;
+}
+
+/* line 65, ../sass/screen.sass */
+body {
+  padding-top: 50px;
+}
+
+/* line 68, ../sass/screen.sass */
+.intro-background {
+  vertical-align: middle;
+  min-height: 100px;
+  background-color: #D6E68A;
+}
+
+/* line 73, ../sass/screen.sass */
+.intro {
+  line-height: 100px;
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+/* line 79, ../sass/screen.sass */
+.middle-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #F6F8EE;
+}
+
+/* line 84, ../sass/screen.sass */
+.website-image, .webservices-image {
+  border-radius: 25px;
+  background: #95AA61;
+  padding: 20px;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+/* line 90, ../sass/screen.sass */
+.caption-text {
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* line 97, ../sass/screen.sass */
+.caption-text-bottom {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/* line 104, ../sass/screen.sass */
+.description-text {
+  margin: 15px 25px 25px 15px;
+  font-family: Merriweather, serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* line 110, ../sass/screen.sass */
+.description-text-bottom {
+  margin: 15px;
+  font-family: Merriweather, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 116, ../sass/screen.sass */
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 121, ../sass/screen.sass */
+.bottom-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #899752;
+}
+
+/* line 126, ../sass/screen.sass */
+.bottom-content-block {
+  border-radius: 25px;
+  width: 95%;
+  background: #F6F8EE;
+  padding: 20px;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+/* line 133, ../sass/screen.sass */
+footer {
+  vertical-align: middle;
+  background-color: #121310;
+  color: #F6F8EE;
+}
+
+/* line 139, ../sass/screen.sass */
+.footer-text {
+  margin: 25px 0 25px 25px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+}

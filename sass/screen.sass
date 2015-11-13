@@ -1,0 +1,144 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import compass/reset
+@import "compass/typography/links/unstyled-link"
+@import "https://fonts.googleapis.com/css?family=Pacifico"
+@import "https://fonts.googleapis.com/css?family=Lato"
+@import "https://fonts.googleapis.com/css?family=Oswald"
+@import "https://fonts.googleapis.com/css?family=Merriweather"
+
+$font-brand: Pacifico, cursive
+$font-nav: Lato, sans-serif
+$font-intro: Oswald, sans-serif
+$font-description: Merriweather, serif
+
+$offwhite: #F6F8EE
+$light-green: #D6E68A
+$dark-green: #95AA61
+$darker-green: #899752
+$black: #121310
+
+$intro-height: 100px
+$footer-height: 100px
+
+$content-padding: 40px
+
+.container-fluid
+	padding-left: 0
+	padding-right: 0
+	
+.navbar-fixed-top
+	border: 0
+
+.navbar-brand-logo
+	height: 50px
+	padding-top: 5px
+	
+.navbar
+	font-family: $font-brand !important
+	background-color: #F6F8EE
+
+.navbar-brand
+	font-weight: 700
+	font-size: 24px
+	margin-top: -5px
+	padding: 0
+	
+.navbar-brand-text
+	margin-top: -30px
+	margin-left: 50px
+	
+.container>.navbar-header
+	margin-left: 30px
+
+.navbar-nav a
+	font-family: $font-nav
+	font-weight: 400
+	font-size: 15px
+	
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+	background-color: $light-green
+
+body
+	padding-top: 50px
+		
+.intro-background
+	vertical-align: middle
+	min-height: $intro-height
+	background-color: $light-green
+	
+.intro
+	line-height: $intro-height
+	font-family: $font-intro
+	font-weight: 400
+	font-size: 36px
+	
+.middle-content
+	padding-top: $content-padding
+	padding-bottom: $content-padding
+	background-color: $offwhite
+	
+.website-image, .webservices-image
+	border-radius: 25px
+	background: $dark-green
+	padding: 20px
+	box-shadow: 1px 1px 1px #888888
+
+.caption-text
+	font-family: $font-nav
+	font-size: 24px
+	font-weight: 700
+	margin-left: 10px
+	margin-top: 10px
+	
+.caption-text-bottom
+	font-family: $font-nav
+	font-size: 18px
+	font-weight: 700
+	margin-left: 5px
+	margin-top: 5px
+	
+.description-text
+	margin: 15px 25px 25px 15px
+	font-family: $font-description
+	font-size: 14px
+	line-height: 24px
+	
+.description-text-bottom
+	margin: 15px
+	font-family: $font-description
+	font-size: 14px
+	line-height: 20px
+	
+.vertical-center
+	position: relative
+	top: 50%
+	transform: translateY(-50%)
+	
+.bottom-content
+	padding-top: $content-padding
+	padding-bottom: $content-padding
+	background-color: $darker-green
+	
+.bottom-content-block
+	border-radius: 25px
+	width: 95%
+	background: $offwhite
+	padding: 20px
+	box-shadow: 1px 1px 1px #888888
+	
+footer
+	vertical-align: middle
+	//min-height: $footer-height
+	background-color: $black
+	color: $offwhite
+	
+.footer-text
+	margin: 25px 0 25px 25px
+	font-family: $font-nav
+	font-weight: 400
+	font-style: italic
+	font-size: 15px
