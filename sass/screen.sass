@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import compass/reset
+@import "compass/css3/opacity"
 @import "compass/typography/links/unstyled-link"
 @import "https://fonts.googleapis.com/css?family=Pacifico"
 @import "https://fonts.googleapis.com/css?family=Lato"
@@ -21,6 +22,9 @@ $dark-green: #95AA61
 $darker-green: #899752
 $black: #121310
 
+$border-radius: 10px
+
+$header-height: 350px
 $intro-height: 100px
 $footer-height: 100px
 
@@ -83,11 +87,35 @@ body
 	background-color: $offwhite
 	
 .website-image, .webservices-image
-	border-radius: 25px
+	border-radius: $border-radius
 	background: $dark-green
 	padding: 20px
 	box-shadow: 1px 1px 1px #888888
+	
+.header-image
+	background: url(../data/bamboo.jpeg)
+	background-size: 100%
+	height: $header-height
 
+.main-caption-text
+	line-height: $header-height
+	vertical-align: middle
+	text-align: center
+	font-family: $font-nav
+	font-size: 68px
+	font-weight: 700
+	//margin-left: 10px
+	//margin-top: 90px
+	color: $offwhite
+	
+.main-caption-description-text
+	font-family: $font-nav
+	font-size: 48px
+	font-weight: 700
+	margin-left: 10px
+	margin-top: 10px
+	color: $offwhite
+	
 .caption-text
 	font-family: $font-nav
 	font-size: 24px
@@ -125,7 +153,7 @@ body
 	background-color: $darker-green
 	
 .bottom-content-block
-	border-radius: 25px
+	border-radius: $border-radius
 	width: 100%
 	background: $offwhite
 	padding: 20px
@@ -143,3 +171,10 @@ footer
 	font-weight: 400
 	font-style: italic
 	font-size: 15px
+	
+.main-image-logo
+	margin-top: -15px
+	height: $header-height
+	
+em
+	font-style: italic
