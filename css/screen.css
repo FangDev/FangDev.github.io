@@ -128,16 +128,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 65, ../sass/screen.sass */
 body {
   padding-top: 50px;
+  background-color: #121310;
 }
 
-/* line 68, ../sass/screen.sass */
+/* line 69, ../sass/screen.sass */
 .intro-background {
   vertical-align: middle;
   min-height: 100px;
   background-color: #D6E68A;
 }
 
-/* line 73, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
 .intro {
   line-height: 100px;
   font-family: Oswald, sans-serif;
@@ -145,14 +146,14 @@ body {
   font-size: 36px;
 }
 
-/* line 79, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 .middle-content {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #F6F8EE;
 }
 
-/* line 84, ../sass/screen.sass */
+/* line 85, ../sass/screen.sass */
 .website-image, .webservices-image {
   border-radius: 25px;
   background: #95AA61;
@@ -160,7 +161,7 @@ body {
   box-shadow: 1px 1px 1px #888888;
 }
 
-/* line 90, ../sass/screen.sass */
+/* line 91, ../sass/screen.sass */
 .caption-text {
   font-family: Lato, sans-serif;
   font-size: 24px;
@@ -169,7 +170,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 97, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 .caption-text-bottom {
   font-family: Lato, sans-serif;
   font-size: 18px;
@@ -178,7 +179,7 @@ body {
   margin-top: 5px;
 }
 
-/* line 104, ../sass/screen.sass */
+/* line 105, ../sass/screen.sass */
 .description-text {
   margin: 15px 25px 25px 15px;
   font-family: Merriweather, serif;
@@ -186,7 +187,7 @@ body {
   line-height: 24px;
 }
 
-/* line 110, ../sass/screen.sass */
+/* line 111, ../sass/screen.sass */
 .description-text-bottom {
   margin: 15px;
   font-family: Merriweather, serif;
@@ -194,37 +195,37 @@ body {
   line-height: 20px;
 }
 
-/* line 116, ../sass/screen.sass */
+/* line 117, ../sass/screen.sass */
 .vertical-center {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 121, ../sass/screen.sass */
+/* line 122, ../sass/screen.sass */
 .bottom-content {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #899752;
 }
 
-/* line 126, ../sass/screen.sass */
+/* line 127, ../sass/screen.sass */
 .bottom-content-block {
   border-radius: 25px;
-  width: 95%;
+  width: 100%;
   background: #F6F8EE;
   padding: 20px;
   box-shadow: 1px 1px 1px #888888;
 }
 
-/* line 133, ../sass/screen.sass */
+/* line 134, ../sass/screen.sass */
 footer {
   vertical-align: middle;
   background-color: #121310;
   color: #F6F8EE;
 }
 
-/* line 139, ../sass/screen.sass */
+/* line 140, ../sass/screen.sass */
 .footer-text {
   margin: 25px 0 25px 25px;
   font-family: Lato, sans-serif;
