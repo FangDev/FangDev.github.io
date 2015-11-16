@@ -74,7 +74,7 @@ body
 	vertical-align: middle
 	min-height: $intro-height
 	background-color: $light-green
-	
+
 .intro
 	line-height: $intro-height
 	font-family: $font-intro
@@ -178,3 +178,28 @@ footer
 	
 em
 	font-style: italic
+
+// Mobile devices
+@media screen and (max-width: 991px)
+	// Hide the larger logo image
+	.main-image-logo
+		margin: -1px
+		padding: 0
+		width: 1px
+		height: 1px
+		overflow: hidden
+		clip: rect(0 0 0 0)
+		clip: rect(0, 0, 0, 0)
+		position: absolute
+		
+	.website-image, .bottom-content-block
+		margin-bottom: 20px
+		
+	.bottom-content
+		padding-bottom: 20px
+		
+	.header-image
+		height: $header-height/2
+		
+	.main-caption-text
+		line-height: $header-height/2
