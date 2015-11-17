@@ -203,3 +203,15 @@ em
 		
 	.main-caption-text
 		line-height: $header-height/2
+		
+@media screen and (max-width: 1199px)
+	// Hide the larger logo image
+	.main-image-logo
+		margin: -1px
+		padding: 0
+		width: 1px
+		height: 1px
+		overflow: hidden
+		clip: rect(0 0 0 0)
+		clip: rect(0, 0, 0, 0)
+		position: absolute
