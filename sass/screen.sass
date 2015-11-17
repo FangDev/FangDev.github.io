@@ -69,6 +69,7 @@ $content-padding: 40px
 body
 	padding-top: 50px
 	background-color: $black
+	min-width: 480px
 		
 .intro-background
 	vertical-align: middle
@@ -178,6 +179,11 @@ footer
 	
 em
 	font-style: italic
+	
+// Very Small Screens
+@media screen and (max-width: 600px)
+	.main-caption-text, .intro
+		font-size: 30px
 
 // Mobile devices
 @media screen and (max-width: 991px)

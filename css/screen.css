@@ -129,16 +129,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   padding-top: 50px;
   background-color: #121310;
+  min-width: 480px;
 }
 
-/* line 73, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
 .intro-background {
   vertical-align: middle;
   min-height: 100px;
   background-color: #D6E68A;
 }
 
-/* line 78, ../sass/screen.sass */
+/* line 79, ../sass/screen.sass */
 .intro {
   line-height: 100px;
   font-family: Oswald, sans-serif;
@@ -146,14 +147,14 @@ body {
   font-size: 36px;
 }
 
-/* line 84, ../sass/screen.sass */
+/* line 85, ../sass/screen.sass */
 .middle-content {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #F6F8EE;
 }
 
-/* line 89, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 .website-image, .webservices-image {
   border-radius: 10px;
   background: #95AA61;
@@ -161,14 +162,14 @@ body {
   box-shadow: 1px 1px 1px #888888;
 }
 
-/* line 95, ../sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 .header-image {
   background: url(../data/bamboo.jpeg);
   background-size: 100%;
   height: 350px;
 }
 
-/* line 100, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 .main-caption-text {
   line-height: 350px;
   vertical-align: middle;
@@ -179,7 +180,7 @@ body {
   color: #F6F8EE;
 }
 
-/* line 111, ../sass/screen.sass */
+/* line 112, ../sass/screen.sass */
 .main-caption-description-text {
   font-family: Lato, sans-serif;
   font-size: 48px;
@@ -189,7 +190,7 @@ body {
   color: #F6F8EE;
 }
 
-/* line 119, ../sass/screen.sass */
+/* line 120, ../sass/screen.sass */
 .caption-text {
   font-family: Lato, sans-serif;
   font-size: 24px;
@@ -198,7 +199,7 @@ body {
   margin-top: 10px;
 }
 
-/* line 126, ../sass/screen.sass */
+/* line 127, ../sass/screen.sass */
 .caption-text-bottom {
   font-family: Lato, sans-serif;
   font-size: 18px;
@@ -207,7 +208,7 @@ body {
   margin-top: 5px;
 }
 
-/* line 133, ../sass/screen.sass */
+/* line 134, ../sass/screen.sass */
 .description-text {
   margin: 15px 25px 25px 15px;
   font-family: Merriweather, serif;
@@ -215,7 +216,7 @@ body {
   line-height: 24px;
 }
 
-/* line 139, ../sass/screen.sass */
+/* line 140, ../sass/screen.sass */
 .description-text-bottom {
   margin: 15px;
   font-family: Merriweather, serif;
@@ -223,21 +224,21 @@ body {
   line-height: 20px;
 }
 
-/* line 145, ../sass/screen.sass */
+/* line 146, ../sass/screen.sass */
 .vertical-center {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 150, ../sass/screen.sass */
+/* line 151, ../sass/screen.sass */
 .bottom-content {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #899752;
 }
 
-/* line 155, ../sass/screen.sass */
+/* line 156, ../sass/screen.sass */
 .bottom-content-block {
   border-radius: 10px;
   width: 100%;
@@ -246,14 +247,14 @@ body {
   box-shadow: 1px 1px 1px #888888;
 }
 
-/* line 162, ../sass/screen.sass */
+/* line 163, ../sass/screen.sass */
 footer {
   vertical-align: middle;
   background-color: #121310;
   color: #F6F8EE;
 }
 
-/* line 168, ../sass/screen.sass */
+/* line 169, ../sass/screen.sass */
 .footer-text {
   margin: 25px 0 25px 25px;
   font-family: Lato, sans-serif;
@@ -262,19 +263,25 @@ footer {
   font-size: 15px;
 }
 
-/* line 175, ../sass/screen.sass */
+/* line 176, ../sass/screen.sass */
 .main-image-logo {
   margin-top: -15px;
   height: 350px;
 }
 
-/* line 179, ../sass/screen.sass */
+/* line 180, ../sass/screen.sass */
 em {
   font-style: italic;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 600px) {
   /* line 185, ../sass/screen.sass */
+  .main-caption-text, .intro {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 191, ../sass/screen.sass */
   .main-image-logo {
     margin: -1px;
     padding: 0;
@@ -286,28 +293,28 @@ em {
     position: absolute;
   }
 
-  /* line 195, ../sass/screen.sass */
+  /* line 201, ../sass/screen.sass */
   .website-image, .bottom-content-block {
     margin-bottom: 20px;
   }
 
-  /* line 198, ../sass/screen.sass */
+  /* line 204, ../sass/screen.sass */
   .bottom-content {
     padding-bottom: 20px;
   }
 
-  /* line 201, ../sass/screen.sass */
+  /* line 207, ../sass/screen.sass */
   .header-image {
     height: 175px;
   }
 
-  /* line 204, ../sass/screen.sass */
+  /* line 210, ../sass/screen.sass */
   .main-caption-text {
     line-height: 175px;
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 209, ../sass/screen.sass */
+  /* line 215, ../sass/screen.sass */
   .main-image-logo {
     margin: -1px;
     padding: 0;
