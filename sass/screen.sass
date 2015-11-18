@@ -4,12 +4,15 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import compass/reset
-@import "compass/css3/opacity"
+@import "compass/css3"
 @import "compass/typography/links/unstyled-link"
 @import "https://fonts.googleapis.com/css?family=Pacifico"
 @import "https://fonts.googleapis.com/css?family=Lato"
 @import "https://fonts.googleapis.com/css?family=Oswald"
 @import "https://fonts.googleapis.com/css?family=Merriweather"
+@import "compass/utilities/sprites"
+@import "icons/*.png"
+@include all-icons-sprites
 
 $font-brand: Pacifico, cursive
 $font-nav: Lato, sans-serif
@@ -94,7 +97,7 @@ body
 	box-shadow: 1px 1px 1px #888888
 	
 .header-image
-	background: url(../data/bamboo.jpeg)
+	background: url(../images/bamboo.jpeg)
 	background-size: 100%
 	height: $header-height
 
@@ -162,16 +165,16 @@ body
 	
 footer
 	vertical-align: middle
-	//min-height: $footer-height
 	background-color: $black
 	color: $offwhite
 	
 .footer-text
-	margin: 25px 0 25px 25px
+	//margin: 25px 0 25px 25px
 	font-family: $font-nav
 	font-weight: 400
 	font-style: italic
 	font-size: 15px
+	line-height: icons-sprite-height(facebook)
 	
 .main-image-logo
 	margin-top: -15px
@@ -179,6 +182,33 @@ footer
 	
 em
 	font-style: italic
+	
+.facebook_icon
+	@include icons-sprite(facebook)
+	display: inline-block
+	height: icons-sprite-height(facebook)
+	width: icons-sprite-width(facebook)
+	
+.twitter_icon
+	@include icons-sprite(twitter)
+	display: inline-block
+	height: icons-sprite-height(twitter)
+	width: icons-sprite-width(twitter)
+	
+.google_plus_icon
+	@include icons-sprite(google_plus)
+	display: inline-block
+	height: icons-sprite-height(google_plus)
+	width: icons-sprite-width(google_plus)
+	
+.github_icon
+	@include icons-sprite(github)
+	display: inline-block
+	height: icons-sprite-height(github)
+	width: icons-sprite-width(github)
+	
+.footer-icon
+	float: right
 	
 // Very Small Screens
 @media screen and (max-width: 600px)
