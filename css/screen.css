@@ -434,3 +434,32 @@ em {
     position: absolute;
   }
 }
+/* line 257, ../sass/screen.sass */
+.tech-logo {
+  width: 300px;
+}
+
+/* line 260, ../sass/screen.sass */
+.bottom-content-block {
+  height: 300px;
+  width: 100%;
+}
+
+/* line 264, ../sass/screen.sass */
+.bottom-content {
+  overflow: hidden;
+}
+
+/* line 267, ../sass/screen.sass */
+#mean-description, #net-description, #wordpress-description {
+  position: absolute;
+  top: 0;
+  left: -5000px;
+  width: 100%;
+}
+
+/* line 273, ../sass/screen.sass */
+.rel-container {
+  position: relative;
+  height: 300px;
+}
