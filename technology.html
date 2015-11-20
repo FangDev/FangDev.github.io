@@ -58,19 +58,19 @@
 			</div>
 		</div>
 		
-		<div class="header-image">
+		<div class="header-image-tech">
 			<div class="container">
 				<div class="col-xs-12 col-lg-12 center-block">
 					<div class="main-caption-text">
-						designing for <em>you</em>
+						keeping current for your needs
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="middle-content">
-			<div class="container">
-				<div id="mean-logo" class="col-md-4">
+		<div class="middle-content-tech">
+			<div id="logo-container" class="container">
+				<div id="mean-logo" class="col-md-4 logo-highlight">
 						<img class="tech-logo center-block" alt="MEAN Stack Logo" src="images/techlogos/mean.png">
 				</div>
 				<div id="net-logo" class="col-md-4">
@@ -149,6 +149,11 @@
 						
 						if (mean_position != 0) {
 							data = "active";
+							
+							$("#mean-logo").addClass("logo-highlight");
+							$("#net-logo").removeClass("logo-highlight");
+							$("#wordpress-logo").removeClass("logo-highlight");
+							
 							$("#mean-description").css({"left": "-5000px"});
 							$("#mean-description").animate({"left": "0px"}, 300);
 							window.setTimeout(
@@ -177,6 +182,11 @@
 						
 						if (net_position != 0) {
 							data = "active";
+							
+							$("#net-logo").addClass("logo-highlight");
+							$("#mean-logo").removeClass("logo-highlight");
+							$("#wordpress-logo").removeClass("logo-highlight");
+							
 							$("#net-description").css({"left": "-5000px"});
 							$("#net-description").animate({"left": "0px"}, 300);
 							window.setTimeout(
@@ -205,6 +215,11 @@
 						
 						if (wordpress_position != 0) {
 							data = "active";
+							
+							$("#wordpress-logo").addClass("logo-highlight");
+							$("#net-logo").removeClass("logo-highlight");
+							$("#mean-logo").removeClass("logo-highlight");
+							
 							$("#wordpress-description").css({"left": "-5000px"});
 							$("#wordpress-description").animate({"left": "0px"}, 300);
 							window.setTimeout(

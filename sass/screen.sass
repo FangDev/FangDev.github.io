@@ -210,6 +210,54 @@ em
 .footer-icon
 	float: right
 	
+// technology.html section
+.tech-logo
+	width: 300px
+	height: 70px
+	
+.bottom-content-block
+	height: 300px
+	width: 100%
+
+.bottom-content
+	overflow: hidden
+	
+#mean-description, #net-description, #wordpress-description
+	position: absolute
+	top: 0
+	left: -5000px
+	width: 100%
+	
+#mean-description
+	left: 0
+	
+#mean-logo, #net-logo, #wordpress-logo
+	padding-top: $content-padding
+	padding-bottom: $content-padding
+	
+.tech-logo
+	padding: 10px
+	
+.logo-highlight
+	background-color: $darker-green
+	transition: background-color 0.4s
+	
+.logo-highlight>img
+	border-radius: $border-radius
+	background-color: $offwhite
+	
+.middle-content-tech
+	background-color: $offwhite
+	
+.rel-container
+	position: relative
+	height: 300px
+	
+.header-image-tech
+	background: url(../images/bamboo-grove.jpg)
+	background-size: 100%
+	height: $header-height
+	
 // Very Small Screens
 @media screen and (max-width: 600px)
 	.main-caption-text, .intro
@@ -234,7 +282,7 @@ em
 	.bottom-content
 		padding-bottom: 20px
 		
-	.header-image
+	.header-image, .header-image-tech
 		height: $header-height/2
 		
 	.main-caption-text
@@ -251,25 +299,3 @@ em
 		clip: rect(0 0 0 0)
 		clip: rect(0, 0, 0, 0)
 		position: absolute
-		
-		
-// technology.html section
-.tech-logo
-	width: 300px
-	
-.bottom-content-block
-	height: 300px
-	width: 100%
-
-.bottom-content
-	overflow: hidden
-	
-#mean-description, #net-description, #wordpress-description
-	position: absolute
-	top: 0
-	left: -5000px
-	width: 100%
-	
-.rel-container
-	position: relative
-	height: 300px

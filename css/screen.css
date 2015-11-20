@@ -382,75 +382,24 @@ em {
   float: right;
 }
 
-@media screen and (max-width: 600px) {
-  /* line 215, ../sass/screen.sass */
-  .main-caption-text, .intro {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 991px) {
-  /* line 221, ../sass/screen.sass */
-  .main-image-logo {
-    margin: -1px;
-    padding: 0;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    clip: rect(0, 0, 0, 0);
-    position: absolute;
-  }
-
-  /* line 231, ../sass/screen.sass */
-  .website-image, .bottom-content-block {
-    margin-bottom: 20px;
-  }
-
-  /* line 234, ../sass/screen.sass */
-  .bottom-content {
-    padding-bottom: 20px;
-  }
-
-  /* line 237, ../sass/screen.sass */
-  .header-image {
-    height: 175px;
-  }
-
-  /* line 240, ../sass/screen.sass */
-  .main-caption-text {
-    line-height: 175px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  /* line 245, ../sass/screen.sass */
-  .main-image-logo {
-    margin: -1px;
-    padding: 0;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    clip: rect(0, 0, 0, 0);
-    position: absolute;
-  }
-}
-/* line 257, ../sass/screen.sass */
+/* line 214, ../sass/screen.sass */
 .tech-logo {
   width: 300px;
+  height: 70px;
 }
 
-/* line 260, ../sass/screen.sass */
+/* line 218, ../sass/screen.sass */
 .bottom-content-block {
   height: 300px;
   width: 100%;
 }
 
-/* line 264, ../sass/screen.sass */
+/* line 222, ../sass/screen.sass */
 .bottom-content {
   overflow: hidden;
 }
 
-/* line 267, ../sass/screen.sass */
+/* line 225, ../sass/screen.sass */
 #mean-description, #net-description, #wordpress-description {
   position: absolute;
   top: 0;
@@ -458,8 +407,101 @@ em {
   width: 100%;
 }
 
-/* line 273, ../sass/screen.sass */
+/* line 231, ../sass/screen.sass */
+#mean-description {
+  left: 0;
+}
+
+/* line 234, ../sass/screen.sass */
+#mean-logo, #net-logo, #wordpress-logo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 238, ../sass/screen.sass */
+.tech-logo {
+  padding: 10px;
+}
+
+/* line 241, ../sass/screen.sass */
+.logo-highlight {
+  background-color: #899752;
+  transition: background-color 0.4s;
+}
+
+/* line 245, ../sass/screen.sass */
+.logo-highlight > img {
+  border-radius: 10px;
+  background-color: #F6F8EE;
+}
+
+/* line 249, ../sass/screen.sass */
+.middle-content-tech {
+  background-color: #F6F8EE;
+}
+
+/* line 252, ../sass/screen.sass */
 .rel-container {
   position: relative;
   height: 300px;
+}
+
+/* line 256, ../sass/screen.sass */
+.header-image-tech {
+  background: url(../images/bamboo-grove.jpg);
+  background-size: 100%;
+  height: 350px;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 263, ../sass/screen.sass */
+  .main-caption-text, .intro {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 269, ../sass/screen.sass */
+  .main-image-logo {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+  }
+
+  /* line 279, ../sass/screen.sass */
+  .website-image, .bottom-content-block {
+    margin-bottom: 20px;
+  }
+
+  /* line 282, ../sass/screen.sass */
+  .bottom-content {
+    padding-bottom: 20px;
+  }
+
+  /* line 285, ../sass/screen.sass */
+  .header-image, .header-image-tech {
+    height: 175px;
+  }
+
+  /* line 288, ../sass/screen.sass */
+  .main-caption-text {
+    line-height: 175px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  /* line 293, ../sass/screen.sass */
+  .main-image-logo {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+  }
 }
