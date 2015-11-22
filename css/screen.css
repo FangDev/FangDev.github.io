@@ -384,7 +384,6 @@ em {
 
 /* line 214, ../sass/screen.sass */
 .tech-logo {
-  width: 300px;
   height: 70px;
 }
 
@@ -414,39 +413,48 @@ em {
 
 /* line 234, ../sass/screen.sass */
 #mean-logo, #net-logo, #wordpress-logo {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* line 238, ../sass/screen.sass */
 .tech-logo {
+  width: 100%;
+  height: 100%;
   padding: 10px;
+  height: 80px;
 }
 
-/* line 241, ../sass/screen.sass */
+/* line 245, ../sass/screen.sass */
+#mean-logo:not([class*="logo-highlight"]):hover, #net-logo:not([class*="logo-highlight"]):hover, #wordpress-logo:not([class*="logo-highlight"]):hover {
+  background-color: #e3e9ca;
+}
+
+/* line 253, ../sass/screen.sass */
 .logo-highlight {
   background-color: #899752;
   transition: background-color 0.4s;
 }
 
-/* line 245, ../sass/screen.sass */
+/* line 257, ../sass/screen.sass */
 .logo-highlight > img {
   border-radius: 10px;
   background-color: #F6F8EE;
 }
 
-/* line 249, ../sass/screen.sass */
+/* line 261, ../sass/screen.sass */
 .middle-content-tech {
+  height: 120px;
   background-color: #F6F8EE;
 }
 
-/* line 252, ../sass/screen.sass */
+/* line 265, ../sass/screen.sass */
 .rel-container {
   position: relative;
   height: 300px;
 }
 
-/* line 256, ../sass/screen.sass */
+/* line 269, ../sass/screen.sass */
 .header-image-tech {
   background: url(../images/bamboo-grove.jpg);
   background-size: 100%;
@@ -454,13 +462,13 @@ em {
 }
 
 @media screen and (max-width: 600px) {
-  /* line 263, ../sass/screen.sass */
+  /* line 276, ../sass/screen.sass */
   .main-caption-text, .intro {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 269, ../sass/screen.sass */
+  /* line 282, ../sass/screen.sass */
   .main-image-logo {
     margin: -1px;
     padding: 0;
@@ -472,28 +480,28 @@ em {
     position: absolute;
   }
 
-  /* line 279, ../sass/screen.sass */
+  /* line 292, ../sass/screen.sass */
   .website-image, .bottom-content-block {
     margin-bottom: 20px;
   }
 
-  /* line 282, ../sass/screen.sass */
+  /* line 295, ../sass/screen.sass */
   .bottom-content {
     padding-bottom: 20px;
   }
 
-  /* line 285, ../sass/screen.sass */
+  /* line 298, ../sass/screen.sass */
   .header-image, .header-image-tech {
     height: 175px;
   }
 
-  /* line 288, ../sass/screen.sass */
+  /* line 301, ../sass/screen.sass */
   .main-caption-text {
     line-height: 175px;
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 293, ../sass/screen.sass */
+  /* line 306, ../sass/screen.sass */
   .main-image-logo {
     margin: -1px;
     padding: 0;

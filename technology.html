@@ -137,11 +137,24 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<script>
+			function ScrollTo(target) {
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top
+				}, 400);
+				return false;
+			  }
+			}
+		
+			$("#mean-logo,#net-logo,#wordpress-logo").click(function(){
+				ScrollTo($("#mean-logo"));
+			});
+		
 			$(document).ready(function(){
 				var data = "inactive";
 			
 				$("#mean-logo").click(function(){
-					console.log(data);
 					if (data != "active") {
 						var mean_position = $("#mean-description").position().left;
 						var net_position = $("#net-description").position().left;
