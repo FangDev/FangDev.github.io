@@ -461,14 +461,50 @@ em {
   height: 350px;
 }
 
+/* line 275, ../sass/screen.sass */
+.header-image-contact {
+  background: url(../images/bamboo-forest.jpg);
+  background-size: 100%;
+  height: 350px;
+}
+
+/* line 280, ../sass/screen.sass */
+.caption-text-contact {
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* line 288, ../sass/screen.sass */
+.description-text-contact, .contact-form {
+  margin: 15px 25px 25px 15px;
+  font-family: Merriweather, serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 295, ../sass/screen.sass */
+.contact-block {
+  margin-bottom: 40px;
+}
+
+/* line 298, ../sass/screen.sass */
+.send-button {
+  text-align: left;
+}
+
 @media screen and (max-width: 600px) {
-  /* line 276, ../sass/screen.sass */
+  /* line 303, ../sass/screen.sass */
   .main-caption-text, .intro {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 282, ../sass/screen.sass */
+  /* line 309, ../sass/screen.sass */
   .main-image-logo {
     margin: -1px;
     padding: 0;
@@ -480,28 +516,28 @@ em {
     position: absolute;
   }
 
-  /* line 292, ../sass/screen.sass */
+  /* line 319, ../sass/screen.sass */
   .website-image, .bottom-content-block {
     margin-bottom: 20px;
   }
 
-  /* line 295, ../sass/screen.sass */
+  /* line 322, ../sass/screen.sass */
   .bottom-content {
     padding-bottom: 20px;
   }
 
-  /* line 298, ../sass/screen.sass */
+  /* line 325, ../sass/screen.sass */
   .header-image, .header-image-tech {
     height: 175px;
   }
 
-  /* line 301, ../sass/screen.sass */
+  /* line 328, ../sass/screen.sass */
   .main-caption-text {
     line-height: 175px;
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 306, ../sass/screen.sass */
+  /* line 333, ../sass/screen.sass */
   .main-image-logo {
     margin: -1px;
     padding: 0;
