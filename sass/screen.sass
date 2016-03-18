@@ -1,0 +1,341 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import compass/reset
+@import "compass/css3"
+@import "compass/typography/links/unstyled-link"
+@import "https://fonts.googleapis.com/css?family=Pacifico"
+@import "https://fonts.googleapis.com/css?family=Lato"
+@import "https://fonts.googleapis.com/css?family=Oswald"
+@import "https://fonts.googleapis.com/css?family=Merriweather"
+@import "compass/utilities/sprites"
+@import "icons/*.png"
+@include all-icons-sprites
+
+$font-brand: Pacifico, cursive
+$font-nav: Lato, sans-serif
+$font-intro: Oswald, sans-serif
+$font-description: Merriweather, serif
+
+$offwhite: #F6F8EE
+$light-green: #D6E68A
+$dark-green: #95AA61
+$darker-green: #899752
+$black: #121310
+
+$border-radius: 10px
+
+$header-height: 350px
+$intro-height: 100px
+$footer-height: 100px
+
+$content-padding: 40px
+
+.container-fluid
+	padding-left: 0
+	padding-right: 0
+	
+.navbar-fixed-top
+	border: 0
+
+.navbar-brand-logo
+	height: 50px
+	padding-top: 5px
+	
+.navbar
+	font-family: $font-brand !important
+	background-color: #F6F8EE
+
+.navbar-brand
+	font-weight: 700
+	font-size: 24px
+	margin-top: -5px
+	padding: 0
+	
+.navbar-brand-text
+	margin-top: -30px
+	margin-left: 50px
+	
+.container>.navbar-header
+	margin-left: 30px
+
+.navbar-nav a
+	font-family: $font-nav
+	font-weight: 400
+	font-size: 15px
+	
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+	background-color: $light-green
+
+body
+	padding-top: 50px
+	background-color: $black
+	min-width: 480px
+		
+.intro-background
+	vertical-align: middle
+	min-height: $intro-height
+	background-color: $light-green
+
+.intro
+	line-height: $intro-height
+	font-family: $font-intro
+	font-weight: 400
+	font-size: 36px
+	
+.middle-content
+	padding-top: $content-padding
+	padding-bottom: $content-padding
+	background-color: $offwhite
+	
+.website-image, .webservices-image
+	border-radius: $border-radius
+	background: $dark-green
+	padding: 20px
+	box-shadow: 1px 1px 1px #888888
+	
+.header-image
+	background: url(../images/bamboo.jpeg)
+	background-size: 100%
+	height: $header-height
+
+.main-caption-text
+	line-height: $header-height
+	vertical-align: middle
+	text-align: center
+	font-family: $font-nav
+	font-size: 68px
+	font-weight: 700
+	//margin-left: 10px
+	//margin-top: 90px
+	color: $offwhite
+	
+.main-caption-description-text
+	font-family: $font-nav
+	font-size: 48px
+	font-weight: 700
+	margin-left: 10px
+	margin-top: 10px
+	color: $offwhite
+	
+.caption-text
+	font-family: $font-nav
+	font-size: 24px
+	font-weight: 700
+	margin-left: 10px
+	margin-top: 10px
+	
+.caption-text-bottom
+	font-family: $font-nav
+	font-size: 18px
+	font-weight: 700
+	margin-left: 5px
+	margin-top: 5px
+	
+.description-text
+	margin: 15px 25px 25px 15px
+	font-family: $font-description
+	font-size: 14px
+	line-height: 24px
+	
+.description-text-bottom
+	margin: 15px
+	font-family: $font-description
+	font-size: 14px
+	line-height: 20px
+	
+.vertical-center
+	position: relative
+	top: 50%
+	transform: translateY(-50%)
+	
+.bottom-content
+	padding-top: $content-padding
+	padding-bottom: $content-padding
+	background-color: $darker-green
+	
+.bottom-content-block
+	border-radius: $border-radius
+	width: 100%
+	background: $offwhite
+	padding: 20px
+	box-shadow: 1px 1px 1px #888888
+	
+footer
+	vertical-align: middle
+	background-color: $black
+	color: $offwhite
+	
+.footer-text
+	//margin: 25px 0 25px 25px
+	font-family: $font-nav
+	font-weight: 400
+	font-style: italic
+	font-size: 15px
+	line-height: icons-sprite-height(facebook)
+	
+.main-image-logo
+	margin-top: -15px
+	height: $header-height
+	
+em
+	font-style: italic
+	
+.facebook_icon
+	@include icons-sprite(facebook)
+	display: inline-block
+	height: icons-sprite-height(facebook)
+	width: icons-sprite-width(facebook)
+	
+.twitter_icon
+	@include icons-sprite(twitter)
+	display: inline-block
+	height: icons-sprite-height(twitter)
+	width: icons-sprite-width(twitter)
+	
+.google_plus_icon
+	@include icons-sprite(google_plus)
+	display: inline-block
+	height: icons-sprite-height(google_plus)
+	width: icons-sprite-width(google_plus)
+	
+.github_icon
+	@include icons-sprite(github)
+	display: inline-block
+	height: icons-sprite-height(github)
+	width: icons-sprite-width(github)
+	
+.footer-icon
+	float: right
+	
+// technology.html section
+.tech-logo
+	//width: 300px
+	height: 70px
+	
+.bottom-content-block
+	height: 300px
+	width: 100%
+
+.bottom-content
+	overflow: hidden
+	
+#mean-description, #net-description, #wordpress-description
+	position: absolute
+	top: 0
+	left: -5000px
+	width: 100%
+	
+#mean-description
+	left: 0
+	
+#mean-logo, #net-logo, #wordpress-logo
+	padding-top: $content-padding/2
+	padding-bottom: $content-padding/2
+	
+.tech-logo
+	// Todo: change the 3 logos to have the same height and use white space to fill the green area
+	width: 100%
+	height: 100%
+	padding: 10px
+	height: 80px
+	
+#mean-logo:not([class*="logo-highlight"]):hover, #net-logo:not([class*="logo-highlight"]):hover, #wordpress-logo:not([class*="logo-highlight"]):hover
+	//background-color: $darker-green
+	background-color: adjust-lightness($offwhite, -10)
+	
+#mean-logo:active, #net-logo:active, #wordpress-logo:active
+	//background-color: adjust-lightness($offwhite, -10)
+	//background-color: $darker-green
+	
+.logo-highlight
+	background-color: $darker-green
+	transition: background-color 0.4s
+	
+.logo-highlight>img
+	border-radius: $border-radius
+	background-color: $offwhite
+	
+.middle-content-tech
+	height: 120px
+	background-color: $offwhite
+	
+.rel-container
+	position: relative
+	height: 300px
+	
+.header-image-tech
+	background: url(../images/bamboo-grove.jpg)
+	background-size: 100%
+	height: $header-height
+	
+// contact.html section
+.header-image-contact
+	background: url(../images/bamboo-forest.jpg)
+	background-size: 100%
+	height: $header-height
+	
+.caption-text-contact
+	font-family: $font-nav
+	font-size: 24px
+	font-weight: 700
+	margin-left: 10px
+	margin-top: 10px
+	text-align: center
+	
+.description-text-contact, .contact-form
+	margin: 15px 25px 25px 15px
+	font-family: $font-description
+	font-size: 14px
+	line-height: 24px
+	text-align: center
+	
+.contact-block
+	margin-bottom: 40px
+	
+.send-button
+	text-align: left
+	
+// Very Small Screens
+@media screen and (max-width: 600px)
+	.main-caption-text, .intro
+		font-size: 30px
+
+// Mobile devices
+@media screen and (max-width: 991px)
+	// Hide the larger logo image
+	.main-image-logo
+		margin: -1px
+		padding: 0
+		width: 1px
+		height: 1px
+		overflow: hidden
+		clip: rect(0 0 0 0)
+		clip: rect(0, 0, 0, 0)
+		position: absolute
+		
+	.website-image, .bottom-content-block
+		margin-bottom: 20px
+		
+	.bottom-content
+		padding-bottom: 20px
+		
+	.header-image, .header-image-tech
+		height: $header-height/2
+		
+	.main-caption-text
+		line-height: $header-height/2
+		
+@media screen and (max-width: 1199px)
+	// Hide the larger logo image
+	.main-image-logo
+		margin: -1px
+		padding: 0
+		width: 1px
+		height: 1px
+		overflow: hidden
+		clip: rect(0 0 0 0)
+		clip: rect(0, 0, 0, 0)
+		position: absolute
